@@ -1,6 +1,8 @@
-import {fibonacci} from "./fibonacci";
-
-console.time("fibonacci");
-console.log(fibonacci(100));
-console.timeEnd("fibonacci");
-
+export function linearSearch(arr: number[], target: number): number {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+            return i;
+        }
+    }
+    return -1;
+}
